@@ -78,5 +78,17 @@
 		font-size: 14px	
 		color: $text-light		
 
-
-
+@media	(max-width: 991px)
+	.navbar
+		&__mobile, &__landline
+			display: none
+@media	(max-width: 576px)
+	.logo
+		display: none	
+	.menu
+		&-button
+			height: 60px
+		&__nav
+			flex-direction: column
+		&__link
+			margin-bottom: 20px	
