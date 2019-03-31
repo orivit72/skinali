@@ -1,0 +1,26 @@
+.features
+	&-block
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&__item
+			text-align: center
+			width: 33.33%
+			margin-bottom: 100px
+			img 
+				width: 36px
+				height: 36px
+@media (max-width: 768px)	
+	.features
+		.section-title
+			margin-top: 200px
+			font-size: 24px
+		&-block	
+			&__item
+				width: 50%
+				margin-bottom: 50px
+@media (max-width: 576px)	
+	.features
+		&-block	
+			&__item
+				width: 100%					
