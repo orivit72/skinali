@@ -24,6 +24,26 @@ body
 	border: none
 	background: $accent
 	+bold
+	&-fitting 
+		padding: 10px
+		text-transform: uppercase
+		color: $accent
+		background: #fff
+		border: none 
+		font-size: 11px
+	&-add 
+		background: lighten($accent, 10)
+		padding: 10px
+		font-size: 11px
+		border: none	
+		color: #fff
+		text-transform: uppercase
+	&-like
+		border: none
+		background: $accent
+		padding: 7.5px 10px
+		img 
+			display: block
 .bg-secondary
 	background: $bg-secondary
 h2 
@@ -50,6 +70,10 @@ input[type="checkbox"]
 			border: 1px solid #ddd
 			margin-right: 20px
 			cursor: pointer
+@media (max-width: 768px)	
+	.section
+		&-title
+			font-size: 24px			
 	
 @media	(max-width: 576px)
 	.button-o
