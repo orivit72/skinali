@@ -17,7 +17,33 @@ body
 	border: none
 	background: $accent
 	+bold
-
+.bg-secondary
+	background: $bg-secondary
+h2 
+	margin: 0
+.input
+	height: 80px
+	padding-left: 30px
+	border: 1px solid #ddd
+	
+input[type="checkbox"]
+	display: none
+	&:checked + label:before
+		background: $accent
+.checkbox
+	&-label
+		display: flex
+		align-items: center
+		margin-right: 42px
+		margin-bottom: 20px
+		&:before
+			content: ''	
+			width: 30px
+			height: 30px
+			border: 1px solid #ddd
+			margin-right: 20px
+			cursor: pointer
+	
 @media	(max-width: 576px)
 	.button-o
 		font-size: 10px
