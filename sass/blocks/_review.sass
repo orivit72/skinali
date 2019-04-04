@@ -1,0 +1,41 @@
+.reviews
+	margin-bottom: 100px
+	&-slider
+		display: flex
+		justify-content: space-between
+		flex-wrap: no-wrap
+		&__item
+			width: 32%
+			text-align: center
+		&__img
+			width: 70px
+			height: 70px
+			border-radius: 50%
+			overflow: hidden
+			margin: auto
+			margin-bottom: 20px
+			border: 2px solid #6a99e9
+			img 
+				display: block
+				width: 100%
+		&__text
+			font-size: 15px
+			font-style: italic
+			padding: 20px
+			background: #fff	
+			margin-bottom: 20px
+			border-radius: 10px
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				bottom: -29px
+				left: 50%
+				transform: translateX(-50%)
+				height: 10px
+				border: 10px solid transparent
+				border-top: 10px solid #fff
+		&__name
+			font-size: 14px
+			+bold 	
+
