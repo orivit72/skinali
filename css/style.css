@@ -985,6 +985,10 @@ input[type="checkbox"]:checked + label:before {
       flex-basis: 48%;
 }
 
+.factory-block__text p {
+  font-size: 20px;
+}
+
 @media (max-width: 425px) {
   .factory-block {
     -ms-flex-wrap: wrap;
@@ -997,6 +1001,165 @@ input[type="checkbox"]:checked + label:before {
   .factory-block__text {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .factory-block__text p {
+    font-size: 16px;
+  }
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.contacts-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts-block__img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contacts-block__link {
+  display: block;
+  text-decoration: none;
+  color: #272727;
+  font-size: 16px;
+}
+
+.contacts .map {
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  .contacts-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contacts-block__item {
+    width: 96%;
+    margin-bottom: 20px;
+  }
+}
+
+.questions__title {
+  font-size: 30px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.questions__link {
+  font-size: 24px;
+  color: #507fe1;
+}
+
+.questions-block {
+  max-width: 800px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  padding: 40px 0;
+  background: #262626;
+  color: #fff;
+}
+
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.footer__subtitle {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.footer__copyright {
+  color: #767676;
+}
+
+.footer__pay-logo {
+  margin: 0 15px;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__phone {
+  font-size: 20px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__mail {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-social__link {
+  margin: 0 7px;
+}
+
+@media (max-width: 425px) {
+  .footer-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__description, .footer__pay-info, .footer__contacts {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
